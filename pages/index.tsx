@@ -1,5 +1,6 @@
 import { Inter } from "@next/font/google";
 import Image from "next/image";
+import Footer from "../src/Footer";
 import Onglet from "../src/Onglet";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,6 +16,7 @@ export default function Home() {
           <Onglet />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
