@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import CatsCard from "./CatsCard";
-import { Cat } from "./types/globalTypes";
+import { Cat } from "../types/globalTypes";
 
 export default function CatsList() {
   const [cats, setCats] = useState<Cat[]>([]);

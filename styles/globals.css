@@ -4,3 +4,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slogan {
+  @apply text-blackColor font-indieFlower text-4xl text-center;
+}
+
+.buttonRose {
+  @apply w-28 h-16 bg-primary text-whiteColor font-indieFlower text-4xl rounded-md;
+}
+.buttonBlack {
+  @apply w-28 h-16 bg-blackColor text-whiteColor font-indieFlower text-4xl rounded-md;
+}

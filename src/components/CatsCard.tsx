@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Cat } from "./types/globalTypes";
+import { Cat } from "../types/globalTypes";
 
 type Props = { cat: Cat };
 
