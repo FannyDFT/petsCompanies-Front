@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 .slogan {
-  @apply text-blackColor font-indieFlower text-4xl text-center;
+  @apply text-blackColor font-indieFlower text-4xl text-center mb-16;
 }
 
 .buttonRose {
@@ -14,4 +14,12 @@
 }
 .buttonBlack {
   @apply w-28 h-16 bg-blackColor text-whiteColor font-indieFlower text-4xl rounded-md;
+}
+
+.input {
+  @apply rounded-md bg-white p-1;
+}
+
+.button {
+  @apply bg-white rounded-md py-4 w-32;
 }

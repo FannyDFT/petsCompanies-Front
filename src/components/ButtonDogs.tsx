@@ -3,30 +3,20 @@ import React, { useState } from "react";
 type Props = {};
 
 function ButtonDogs({}: Props) {
-  const [isBlack, setIsBlack] = useState(true);
+  const [selectedButton, setSelectedButton] = useState(null);
 
-  const handleChangeColor = () => {
-    setIsBlack(!isBlack);
+  const handleChangeClick = (id) => {
+    setSelectedButton(id);
   };
   return (
     <>
-      {isBlack ? (
-        <button
-          onClick={handleChangeColor}
-          type="button"
-          className="buttonRose"
-        >
-          Chiens
-        </button>
-      ) : (
-        <button
-          onClick={handleChangeColor}
-          type="button"
-          className="buttonBlack"
-        >
-          Chiens
-        </button>
-      )}
+      <button
+        onClick={() => handleChangeClick(1)}
+        type="button"
+        className={selectedButton === 1 ? "buttonRose" : "buttonBlack"}
+      >
+        Chiens
+      </button>
     </>
   );
 }
