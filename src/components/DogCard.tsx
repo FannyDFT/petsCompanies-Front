@@ -1,28 +1,28 @@
 import React from "react";
 import Image from "next/image";
-import { Cat } from "../types/globalTypes";
+import { Dog } from "../types/globalTypes";
 import Link from "next/link";
 
 type Props = {
-  cat: Cat;
+  dog: Dog;
 };
 
-function CatsCard({ cat }: Props) {
+function DogCard({ dog }: Props) {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Link href={`/cats/${cat.id}`}>
+      <Link href={`/dogs/${dog.id}`}>
         <Image
-          src={cat.imageURL}
+          src={dog.imageURL}
           width={150}
-          height={200}
-          alt={cat.race}
+          height={180}
+          alt={dog.race}
           className="rounded-lg border-0"
         />
       </Link>
 
-      <p className="font-indieFlower text-white text-2xl ">{cat.race}</p>
+      <p className="font-indieFlower text-white text-2xl ">{dog.race}</p>
     </div>
   );
 }
 
-export default CatsCard;
+export default DogCard;

@@ -3,31 +3,21 @@ import React, { useState } from "react";
 type Props = {};
 
 function ButtonCats({}: Props) {
-  const [isBlack, setIsBlack] = useState(true);
+  const [selectedButton, setSelectedButton] = useState(null);
 
-  const handleChangeColor = () => {
-    setIsBlack(!isBlack);
+  const handleChangeClick = (id) => {
+    setSelectedButton(id);
   };
 
   return (
     <>
-      {isBlack ? (
-        <button
-          onClick={handleChangeColor}
-          type="button"
-          className="buttonRose"
-        >
-          Chats
-        </button>
-      ) : (
-        <button
-          onClick={handleChangeColor}
-          type="button"
-          className="buttonBlack"
-        >
-          Chats
-        </button>
-      )}
+      <button
+        onClick={handleChangeClick}
+        type="button"
+        className={selectedButton === 2 ? "buttonRose" : "buttonBlack"}
+      >
+        Chats
+      </button>
     </>
   );
 }

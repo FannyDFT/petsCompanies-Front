@@ -1,8 +1,11 @@
-import React from "react";
-import CardCats from "../src/components/CatsCard";
+import CatsList from "../src/components/CatsList";
 
-function cats() {
-  return <div>{/* <CardCats /> */}</div>;
+function Cats() {
+  return (
+    <div className="h-screen bg-primary overflow-y-scroll ">
+      <CatsList />
+    </div>
+  );
 }
 
-export default cats;
+export default Cats;
